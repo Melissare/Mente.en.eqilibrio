@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Mente en Equilibrio: hábitos digitales saludables para cuidar la atención, el descanso y el bienestar.">
+<title>Mente en Equilibrio | Bienestar digital</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+<a class="brand" href="#" data-go="inicio"><span>◉</span> Mente en Equilibrio</a>
+<button class="menu" id="menu" aria-label="Abrir menú" aria-expanded="false">☰</button>
+<nav id="nav" aria-label="Navegación"><button class="active" data-tab="inicio">Inicio</button><button data-tab="habitos">Mis hábitos</button><button data-tab="ideas">Ideas saludables</button><button data-tab="quiz">Mini quiz</button></nav>
+</header>
+<main>
+<section class="panel active" id="inicio">
+<div class="hero wrap">
+<div><small class="eyebrow">BIENESTAR DIGITAL · PASO A PASO</small><h1>Conecta con el mundo.<br><em>No te desconectes de ti.</em></h1>
+<p>Las redes sociales pueden entretener, informar y acercarnos. También es útil aprender a hacer pausas, cuidar el sueño y prestar atención a lo que ocurre fuera de la pantalla.</p>
+<button class="primary" data-go="habitos">Revisar mis hábitos →</button><button class="secondary" data-go="ideas">Explorar ideas ↗</button>
+<p class="note">✦ No se trata de dejar las redes, sino de usarlas con intención.</p></div>
+<div class="hero-art"><div class="halo"></div><div class="brain">🧠</div><div class="float-card fc1">🌿 <span><b>Respira</b><small>Haz una pausa</small></span></div><div class="float-card fc2">🌙 <span><b>Descansa</b><small>Cuida tu sueño</small></span></div><div class="float-card fc3">📵 <span><b>Elige</b><small>Cuándo conectarte</small></span></div></div>
+</div>
+<div class="steps wrap"><div><b>01</b> Observa cómo usas las redes</div><div><b>02</b> Elige un hábito posible</div><div><b>03</b> Practícalo con constancia</div></div>
+<div class="wrap intro"><small class="eyebrow">TU BIENESTAR, A TU RITMO</small><h2>Pequeños hábitos, más equilibrio</h2><div class="cards">
+<article><i>⏳</i><h3>Conoce tu rutina</h3><p>Reflexiona sobre el tiempo de pantalla, las pausas y el descanso.</p><button data-go="habitos">Completar autoevaluación →</button></article>
+<article><i>🌱</i><h3>Prueba nuevas ideas</h3><p>Encuentra actividades sencillas para equilibrar tu día.</p><button data-go="ideas">Ver ideas →</button></article>
+<article><i>🧩</i><h3>Aprende jugando</h3><p>Responde preguntas sobre hábitos digitales saludables.</p><button data-go="quiz">Iniciar mini quiz →</button></article>
+</div></div>
+</section>
+<section class="panel" id="habitos">
+<div class="wrap pagehead"><small class="eyebrow">AUTOEVALUACIÓN EDUCATIVA</small><h1>Observa tu rutina,<br><em>sin juzgarte.</em></h1><p>Contesta sobre tus hábitos recientes. El resultado es una orientación para reflexionar, no un diagnóstico ni una prueba de tu salud cognitiva.</p></div>
+<div class="wrap layout"><form class="box" id="habitForm"><small class="eyebrow">TU DÍA DIGITAL</small><h2>¿Cómo te organizas?</h2>
+<label for="screen">¿Cuántas horas al día usas redes sociales?</label><input id="screen" type="number" min="0" max="24" step=".5" value="3" required>
+<label for="breaks">¿Con qué frecuencia haces pausas lejos de la pantalla?</label><select id="breaks"><option value="0">Casi nunca</option><option value="1">A veces</option><option value="2" selected>Con frecuencia</option></select>
+<label for="sleep">¿Sueles dejar el teléfono antes de dormir?</label><select id="sleep"><option value="0">Casi nunca</option><option value="1">A veces</option><option value="2" selected>Generalmente sí</option></select>
+<label for="offline">¿Dedicas tiempo a actividades sin pantalla?</label><select id="offline"><option value="0">Poco o nada</option><option value="1">Algunos días</option><option value="2" selected>Casi todos los días</option></select>
+<button class="primary full">Ver reflexión personalizada →</button><p class="fine">Tus respuestas se procesan en este navegador y no se guardan ni envían.</p></form>
+<aside class="box result" aria-live="polite"><div class="result-icon">✦</div><small class="eyebrow">TU REFLEXIÓN</small><h2 id="resultTitle">Tu reflexión aparecerá aquí</h2><p id="resultText">Responde las preguntas para recibir una sugerencia práctica.</p><div class="meter"><span id="meter"></span></div><p id="resultTip">💡 Recuerda: cada persona tiene rutinas y necesidades distintas.</p></aside></div>
+</section>
+<section class="panel" id="ideas">
+<div class="wrap pagehead"><small class="eyebrow">ACCIONES PEQUEÑAS Y POSIBLES</small><h1>Más equilibrio,<br><em>menos piloto automático.</em></h1><p>Explora sugerencias para cuidar tu atención, descanso y tiempo fuera de las pantallas.</p></div>
+<div class="wrap filters"><div><button class="chosen" data-filter="todos">Todas</button><button data-filter="atencion">Atención</button><button data-filter="descanso">Descanso</button><button data-filter="desconexion">Desconexión</button><button data-filter="social">Vida social</button></div><span id="count">8 ideas</span></div>
+<div class="wrap tipgrid">
+<article data-kind="atencion"><small>01 / ATENCIÓN</small><div>⏱️</div><h3>Prueba una pausa breve</h3><p>Al terminar un rato de pantalla, levántate, estírate o mira a lo lejos unos minutos.</p></article>
+<article data-kind="descanso"><small>02 / DESCANSO</small><div>🌙</div><h3>Crea una rutina nocturna</h3><p>Si te ayuda, deja el teléfono fuera de la cama y realiza una actividad tranquila antes de dormir.</p></article>
+<article data-kind="atencion"><small>03 / ATENCIÓN</small><div>🔕</div><h3>Silencia avisos no urgentes</h3><p>Desactiva notificaciones que interrumpen tus tareas y revisa las apps en momentos elegidos.</p></article>
+<article data-kind="desconexion"><small>04 / DESCONEXIÓN</small><div>📚</div><h3>Reserva tiempo para leer</h3><p>Elige un libro, cómic o texto que disfrutes y dedica unos minutos sin alternar con redes.</p></article>
+<article data-kind="social"><small>05 / VIDA SOCIAL</small><div>☕</div><h3>Comparte tiempo presente</h3><p>Durante una conversación o comida, acuerda guardar los teléfonos si todos están cómodos.</p></article>
+<article data-kind="desconexion"><small>06 / DESCONEXIÓN</small><div>🎨</div><h3>Retoma una actividad creativa</h3><p>Dibuja, cocina, toca música o haz algo manual que te resulte agradable.</p></article>
+<article data-kind="atencion"><small>07 / ATENCIÓN</small><div>🎯</div><h3>Haz una cosa a la vez</h3><p>Prueba estudiar o trabajar con una sola tarea abierta y revisa mensajes al terminar un bloque.</p></article>
+<article data-kind="descanso"><small>08 / DESCANSO</small><div>🚶</div><h3>Muévete durante el día</h3><p>Incluye movimiento que disfrutes y que se adapte a tus posibilidades y rutina.</p></article>
+</div>
+</section>
+<section class="panel" id="quiz">
+<div class="wrap pagehead"><small class="eyebrow">APRENDE EN UN MINUTO</small><h1>¿Qué sabes del<br><em>bienestar digital?</em></h1><p>Responde cinco preguntas y revisa las explicaciones.</p></div>
+<div class="wrap quiz-layout"><div class="box quiz"><div class="quiztop"><small class="eyebrow">MINI QUIZ</small><span id="progress">Pregunta 1 de 5</span></div><div class="meter"><span id="progressbar"></span></div><div id="quizbody"><h2 id="question"></h2><div id="answers"></div><p id="feedback" aria-live="polite"></p><button class="primary" id="next" disabled>Siguiente →</button></div><div id="quizend" hidden><div class="result-icon">✦</div><h2 id="score"></h2><p id="scoretext"></p><button class="primary" id="restart">Volver a jugar ↻</button></div></div>
+<aside class="box aside"><div>🧠</div><h3>Tu bienestar es más que una pantalla.</h3><p>El sueño, las relaciones, el movimiento, los intereses y el descanso también forman parte de una rutina equilibrada.</p><button class="secondary" data-go="ideas">Explorar ideas →</button></aside></div>
+</section>
+</main>
+<footer><div class="wrap foot"><b>◉ Mente en Equilibrio</b><span>Hábitos digitales con intención · Proyecto educativo</span><span>2026</span></div><div class="wrap disclaimer">Contenido informativo, no consejo médico. Si te preocupa tu atención, memoria, sueño o bienestar, habla con un adulto de confianza o un profesional de salud.</div></footer>
+<script src="script.js"></script>
+</body></html>
